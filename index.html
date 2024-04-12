@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent.
+    Use Mondrian compositions to practice Grid
+    */
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    /*profesors code*/
+
+    .item{
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .white1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .white2 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .white3 {
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 /4;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: solid 10px black;
+    }
+    .white4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    /* my dumb solution for grid-items, 
+    i had it backwards and was confusing rows for columns.
+
+    .grid-row-red{
+      background-color: #E72F24;
+      width: 320px;
+    }
+    .grid-column-white{
+      background-color: #F0F1EC;
+      width: 414px;
+    }
+    .grid-column-white1{
+      background-color: #F0F1EC;
+      width: 155px;
+    }
+    .grid-column-white2{
+      background-color: #F0F1EC;
+      width: 130px;
+    }
+
+    .grid-row-blue{
+      background-color: #004592;
+      width: 50px;
+    }
+
+    .grid-column-white3{
+      background-color: #F0F1EC;
+      width: 20px;
+    }
+
+
+    .grid-row-yellow{
+      background-color: #F9D01E;
+      width: 198px;
+    }
+
+    .grid-row-black{
+      background-color: #232629;
+      width: 153px;
+    }
+
+    .grid-column-white4{
+      background-color: #F0F1EC;
+      width: 20px;
+    }
+
+
+    for grid items
+      use border-bottom or whatever: none; to hide borders
+      3 rows x 3 columns = 9 
+    */
+
+  </style>
+</head>
+<!---professor's solution-->
+<body>
+ 
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+
+    <div class="item"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+
+  </div>
+
+  <!-- divide each item by color name.
+    My dumb solution:
+      <div class="container">
+
+    <div class="grid-row-red"></div>
+    <div class="grid-column-white"></div>
+    <div class="grid-column-white1"></div>
+    <div class="grid-column-white2"></div>
+    <div class="grid-row-blue"></div>
+    <div class="grid-column-white3"></div>
+    <div class="grid-row-yellow"></div>
+    <div class="grid-row-black"></div>
+    <div class="grid-column-white4"></div>
+  </div> -->
+</body>
+
+</html>
